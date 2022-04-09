@@ -1,9 +1,7 @@
-package it.seba.metodologie.rettangolo;
+package it.seba.metodologie.ex01;
 
 /**
- * Rettangolo
- * 
- * compile: javac .\src\it\seba\metodologie\rettangolo\Rettangolo.java -d .\bin\
+ * Rectangle
  * 
  * @author Sebastian Rapetti
  */
@@ -30,7 +28,7 @@ public class Rettangolo {
 	private int length;
 
 	/**
-	 * Constructor
+	 * Class constructor
 	 *
 	 * @param x coordinate of the north west point
 	 * @param y coordinate of the north west point
@@ -57,10 +55,10 @@ public class Rettangolo {
 
 	@Override
 	public String toString() {
-		//calculate south east point
+		// calculate south east point
 		int xSe = xNw + length;
 		int ySe = yNw + height;
 
-		return "("+ xNw +", " + yNw + ")->("+ xSe +", " + ySe + ")";
+		return "(" + xNw + ", " + yNw + ")->(" + xSe + ", " + ySe + ")";
 	}
 }
