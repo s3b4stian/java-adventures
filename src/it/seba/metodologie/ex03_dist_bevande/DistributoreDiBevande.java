@@ -117,19 +117,34 @@ public class DistributoreDiBevande {
 
     }
 
-    public void inserisciImporto(double importo) /*throws WeEatYourMoneyException*/ {
+    /**
+     * Load money into the dispenser
+     * 
+     * @param importo
+     */
+    public void inserisciImporto(double importo) /* throws WeEatYourMoneyException */ {
         if (importo < 0) {
-            //throw new WeEatYourMoneyException();
+            // throw new WeEatYourMoneyException();
             importo = 0;
         }
 
         balance += importo;
     }
 
+    /**
+     * Returns the balance
+     * 
+     * @return
+     */
     public double getSaldo() {
         return balance;
     }
 
+    /**
+     * Returns the change
+     * 
+     * @return
+     */
     public double getResto() {
         double tmpChange = balance;
         balance = 0.0;
