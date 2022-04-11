@@ -22,7 +22,7 @@ public class TestDistributoreDiBevande {
     void resetObject() {
         // create new instance
         d = new DistributoreDiBevande(6);
-        // load new products to dispencer
+        // load new products to dispenser
         try {
             d.carica("A01", new Prodotto(0.25, TipoProdotto.CAFFE, "Espresso Corto"));
             d.carica("A02", new Prodotto(0.25, TipoProdotto.CAFFE, "Espresso Lungo"));
@@ -41,7 +41,7 @@ public class TestDistributoreDiBevande {
     }
 
     @Test
-    void caricaTest() {
+    void purchaseTest() {
         d.inserisciImporto(10.0);
 
         assertEquals(d.getSaldo(), 10.0);
