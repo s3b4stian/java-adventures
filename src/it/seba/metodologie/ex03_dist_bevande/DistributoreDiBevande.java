@@ -83,6 +83,7 @@ public class DistributoreDiBevande {
      * 
      * @throws ProductOutOfStockException
      * @throws InvalidProductNumberException
+     * @throws NotEnoughMoneyException
      */
     public Prodotto getProdotto(String numeroProdotto)
             throws ProductOutOfStockException, InvalidProductNumberException, NotEnoughMoneyException {
