@@ -115,9 +115,6 @@ public class Campo {
             int fighterDisney = Campo.getRandomNumber(0, teamDisney.size());
             int fighterMarvel = Campo.getRandomNumber(0, teamMarvel.size());
 
-            // System.out.println(fighterDisney + " " + fighterMarvel);
-            // System.out.println(teamDisney.size() + " " + teamMarvel.size());
-
             // get the fighter
             AbstractPersonaggio f1 = teamDisney.get(fighterDisney);
             AbstractPersonaggio f2 = teamMarvel.get(fighterMarvel);
