@@ -10,19 +10,19 @@ public class StampaVocali {
         for (int i = 0; i < len; i++) {
             switch (s.charAt(i)) {
             case 'a':
-                counter[0] += 1;
+                counter[0]++;
                 break;
             case 'e':
-                counter[1] += 1;
+                counter[1]++;
                 break;
             case 'i':
-                counter[2] += 1;
+                counter[2]++;
                 break;
             case 'o':
-                counter[3] += 1;
+                counter[3]++;
                 break;
             case 'u':
-                counter[4] += 1;
+                counter[4]++;
                 break;
             }
         }

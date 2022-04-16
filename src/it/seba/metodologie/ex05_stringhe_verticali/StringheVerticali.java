@@ -36,7 +36,6 @@ public class StringheVerticali {
 
     public static void main(String[] args) {
         StringheVerticali.stampaVerticale("ciao", "buondì", "hello");
-
     }
 
 }
