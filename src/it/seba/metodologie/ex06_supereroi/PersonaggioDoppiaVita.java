@@ -5,11 +5,11 @@ public class PersonaggioDoppiaVita extends AbstractPersonaggio implements Doppia
     private String superHeroName;
     private int attackPoint;
 
-    private class SecretIdentity extends PersonaggioSupereroe implements DoppiaVita {
+    private class IdentitaSegreta extends PersonaggioSupereroe implements DoppiaVita {
 
         private PersonaggioDoppiaVita publicIdentityReference;
 
-        public SecretIdentity(PersonaggioDoppiaVita personaggioPubblico, String nomeIdentitaSegreta, int puntiVita,
+        public IdentitaSegreta(PersonaggioDoppiaVita personaggioPubblico, String nomeIdentitaSegreta, int puntiVita,
                 int puntiAttacco) {
             super(nomeIdentitaSegreta, puntiVita, puntiAttacco);
             publicIdentityReference = personaggioPubblico;
@@ -19,7 +19,7 @@ public class PersonaggioDoppiaVita extends AbstractPersonaggio implements Doppia
         public Supereroe assumiIdentitaSegreta() {
             // already superhero
             // it could throw an exception
-            return null;
+            return this;
         }
 
         @Override
@@ -37,14 +37,14 @@ public class PersonaggioDoppiaVita extends AbstractPersonaggio implements Doppia
 
     @Override
     public Supereroe assumiIdentitaSegreta() {
-        return new SecretIdentity(this, superHeroName, life, attackPoint);
+        return new IdentitaSegreta(this, superHeroName, life, attackPoint);
     }
 
     @Override
     public DoppiaVita assumiIdentitaPubblica() {
         // already public
         // it could throw an exception
-        return null;
+        return this;
     }
 
     @Override
