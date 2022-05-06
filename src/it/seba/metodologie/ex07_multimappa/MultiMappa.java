@@ -3,7 +3,6 @@ package it.seba.metodologie.ex07_multimappa;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
-//import java.util.List;
 
 /**
  * Class Multi Map.
@@ -11,8 +10,8 @@ import java.util.Iterator;
  * Implemented as linked list, not implemented using internally a Map<K,
  * Collection<V>> and other Java data structures intentionally.
  * 
- * It uses ArrayList<V> to represent a Collection when a key have to set using a
- * single element, cast to List<V>.
+ * It uses ArrayList<V> to represent a Collection when a key had set using a
+ * single element, cast to List<V> on retrieve.
  * 
  * @author Sebastian Rapetti
  *
@@ -359,74 +358,4 @@ public class MultiMappa<K extends Object, V> implements Iterable<MultiMappa.Elem
 
         return sb.toString();
     }
-
-    // public static void main(String[] args) {
-
-    /*
-     * MultiMappa<String, Integer> mmap = new MultiMappa<String, Integer>();
-     * 
-     * 
-     * mmap.put("numeri", 1); mmap.put("numeri", 2); mmap.put("numeri", 3);
-     * mmap.put("numeri", 4); mmap.put("decine", 10); mmap.put("decine", 20);
-     * mmap.put("decine", 30); mmap.put("decine", 40); mmap.put("centinaia", 100);
-     * mmap.put("centinaia", 200); mmap.put("centinaia", 300); mmap.put("centinaia",
-     * 400); mmap.put("migliaia", 1000);
-     * 
-     * MultiMappa<String, Integer> mmap2 = new MultiMappa<String, Integer>();
-     * 
-     * mmap2.put("numeri", 3); mmap2.put("numeri", 4); mmap2.put("numeri", 5);
-     * mmap2.put("numeri", 6); mmap2.put("decine", 30); mmap2.put("decine", 40);
-     * mmap2.put("decine", 50); mmap2.put("decine", 60); mmap2.put("centinaia",
-     * 400); mmap2.put("centinaia", 500); mmap2.put("centinaia", 600);
-     * mmap2.put("centinaia", 700); mmap2.put("migliaia", 1000);
-     * 
-     * 
-     * Iterator<MultiMappa.Element<String,Integer>> mmapIterator = mmap.iterator();
-     * 
-     * for (MultiMappa.Element<String, Integer> e : mmap) {
-     * System.out.println(e.getKey()); System.out.println(e.getValue());
-     * 
-     * }
-     */
-
-    /*
-     * System.out.println(mmap); System.out.println(mmap2);
-     * 
-     * mmap.intersectMultiMappa(mmap2);
-     * 
-     * System.out.println(mmap);
-     */
-
-    /*
-     * mmap.remove("numeri");
-     * 
-     * System.out.println(mmap);
-     * 
-     * mmap.remove("migliaia");
-     * 
-     * System.out.println(mmap);
-     */
-
-    /*
-     * MultiMappa<String, String> mmap2 = new MultiMappa<String, String>();
-     * 
-     * mmap2.put("n", "1"); mmap2.put("n", "2"); mmap2.put("d", "10");
-     * mmap2.put("d", "20");
-     * 
-     * System.out.println(mmap2); System.out.println(mmap);
-     */
-
-    /*
-     * System.out.println(mmap.contains("decine", 20));
-     * System.out.println(mmap.contains("decine", 70));
-     * 
-     * List<Integer> set = new ArrayList<Integer>(); set.add(10); set.add(20);
-     * set.add(50); set.add(80);
-     * 
-     * System.out.println(mmap);
-     * 
-     * System.out.println(mmap.intersect("decine", set)); System.out.println(mmap);
-     */
-
-    // }
 }
