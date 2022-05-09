@@ -334,6 +334,7 @@ public class MultiMappa<K extends Object, V> implements Iterable<MultiMappa.Elem
     /**
      * Print the object as JSON like string.
      */
+    @Override
     public String toString() {
 
         StringBuffer sb = new StringBuffer();
