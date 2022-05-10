@@ -123,7 +123,6 @@ public class TorreDiHanoi {
             // second recursive call, swap column 2 with column 1
             swapStack(n - 1, tr2, tr1, tr3);
         }
-
     }
 
     public static void main(String[] args) {
