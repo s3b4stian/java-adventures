@@ -49,11 +49,8 @@ public class TorreDiHanoi {
     private Disco[] reverse(Disco[] a, int n) {
 
         Disco[] b = new Disco[n];
-        int j = n;
-        for (int i = 0; i < n; i++) {
-            b[j - 1] = a[i];
-            j = j - 1;
-        }
+        // more concise than previous code
+        for (int i = 0, j = n; i < n; i++) b[--j] = a[i];
 
         return b;
     }
